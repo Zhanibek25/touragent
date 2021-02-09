@@ -4,7 +4,7 @@ namespace Tour
 {
     class Visa
     {
-        private int idVisa = 1;
+        private int visaID = 1;
         private int clientID = 1;
         private string typeVisa;
         private string dateStartVisa;
@@ -12,15 +12,15 @@ namespace Tour
         
         public Visa()
         {
-            this.idVisa++;
+            this.visaID++;
             this.typeVisa = "defaultTypeVisa";
             this.dateStartVisa = "defaultStartVisa";
             this.dateFinishVisa = "defaultFinishVisa";
             this.clientID++;
         }
-        public Visa(string typeVisa, string dateStaVis, string dateFiVisa)
+        public Visa(string typeVisa, string dateStartVisa, string dateFinishVisa)
         {
-            this.idVisa++;
+            this.visaID++;
             this.typeVisa = typeVisa;
             this.dateStartVisa = dateStartVisa;
             this.dateFinishVisa = dateFinishVisa;
